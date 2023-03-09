@@ -1,8 +1,6 @@
-print("he")
-print("test1")
+i = 0
+j = 0
 
-for i in range(5):
-    print(i)
-
-a = 5
-print(a)
+for k in range(3):
+    
+print(str(i) + " " + str(j))
