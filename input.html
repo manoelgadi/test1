@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bargain copy.css">
+</head>
+<body>
+    <div id ="contents">
+        <ul>
+            <li>
+                <label for="num1">첫번째 수</label>
+                <input type="text" id="num1">
+            </li>
+            <li>
+                <label for="num2">두번째 수</label>
+                <input type="text" id="num2">
+            </li>
+            <li>
+                <button onclick="tem()">+</button>
+                <button onclick="dis()">-</button>
+                <button onclick="num4()">*</button>
+                <button onclick="div()">/</button>
+                <button onclick="num3()">%</button>
+            </li>
+        </ul>
+        <div id ="tem"></div>
+        <div id ="dis"></div>
+        <div id ="num4"></div>
+        <div id ="div"></div>
+        <div id ="num3"></div>
+    </div>
+    <script>
+        function tem(){
+            var num1 = document.querySelector('#num1').value;
+            var num2 = document.querySelector('#num2').value;
+            var num1 = parseInt(num1);
+            var num2 = parseInt(num2); 
+            var resultPrice = parseInt(num1) + parseInt(num2);
+            document.querySelector('#tem').innerHTML = "두수의 합은 " + resultPrice + "입니다 ";
+        }
+
+        function dis(){
+            var num1 = document.querySelector('#num1').value;
+            var num2 = document.querySelector('#num2').value;
+            var num1 = parseInt(num1);
+            var num2 = parseInt(num2);
+            var resultPrice = parseInt(num1) - parseInt(num2);
+            document.querySelector('#tem').innerHTML = "두수의 뺄셈은 " + resultPrice + "입니다 ";
+        }
+        function num4(){
+            var num1 = document.querySelector('#num1').value;
+            var num2 = document.querySelector('#num2').value;
+            var num1 = parseInt(num1);
+            var num2 = parseInt(num2);
+            var resultPrice = parseInt(num1) * parseInt(num2);
+            document.querySelector('#tem').innerHTML = "두수의 곱셈은 " + resultPrice + "입니다 ";
+        }
+
+        function div(){
+            var num1 = document.querySelector('#num1').value;
+            var num2 = document.querySelector('#num2').value;
+            var num1 = parseInt(num1);
+            var num2 = parseInt(num2);
+            var resultPrice = parseInt(num1) / parseInt(num2);
+            document.querySelector('#tem').innerHTML = "두수의 나눗셈은 " + resultPrice + "입니다 ";
+        }
+
+        function num3(){
+            var num1 = document.querySelector('#num1').value;
+            var num2 = document.querySelector('#num2').value;
+            var num1 = parseInt(num1);
+            var num2 = parseInt(num2);
+            var resultPrice = parseInt(num1) % parseInt(num2);
+            document.querySelector('#tem').innerHTML = "두수의 나머지은 " + resultPrice + " 입니다";
+        }
+
+    </script>
+</body>
+</html>
